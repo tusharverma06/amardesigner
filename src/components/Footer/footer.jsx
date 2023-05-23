@@ -3,7 +3,7 @@ import LogoWhite from '../../assets/LogoLogoWhite.svg'
 import Phone from '../../assets/Phone.png'
 const footer = () => {
     return (
-        <div className='flex items-center justify-between lg:justify-around w-full px-2 py-4 lg:py-12 my-8 bg-red-500 text-[#fffc]'>
+        <div className='flex flex-col sm:flex-row items-center justify-center gap-12 sm:justify-between lg:justify-around w-full px-2 py-4 lg:py-12 my-8 bg-black text-[#fffc]'>
             <div className="flex flex-col items-center justify-center gap-5">
                 <div>
                     <img src={LogoWhite} alt="" className='w-24 sm:w-32 lg:w-44' />
