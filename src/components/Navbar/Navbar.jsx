@@ -1,7 +1,8 @@
 import React, { useState } from 'react'
-import Logo from '../assets/Logo.svg'
-import Account from '../assets/Account.svg'
-import Menu from '../assets/Menu.svg'
+import Logo from '../../assets/Logo.svg'
+import Account from '../../assets/Account.svg'
+import Menu from '../../assets/Menu.svg'
+import { Link } from 'react-router-dom'
 const Navbar = ({ windowWidth }) => {
     // Side Menu Bar in Mobile
     const [isOpen, setIsOpen] = useState(false)
@@ -15,19 +16,23 @@ const Navbar = ({ windowWidth }) => {
                 </div>
                 <div className='hidden sm:block'>
                     <ul className='flex items-center justify-center space-x-6 md:space-x-12 text-primary'>
+                        <Link to={'/'}>
                         <li className='text-xs font-normal transition-all cursor-pointer md:text-lg hover:text-red-600 hover:scale-110 group duration-400'>Home
                             {/* Underline effect on Hover */}
                             <span class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-red-600"></span>
                         </li>
+                        </Link>
                         <li className='text-xs font-normal transition-all cursor-pointer md:text-lg group hover:text-red-600 hover:scale-110 duration-400'>About
                             <span class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-red-600"></span>
                         </li>
                         <li className='text-xs font-normal transition-all cursor-pointer md:text-lg group hover:text-red-600 hover:scale-110 duration-400'>Contact Us
                             <span class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-red-600"></span>
                         </li>
-                        <li className='text-xs font-normal transition-all cursor-pointer md:text-lg group hover:text-red-600 hover:scale-110 duration-400'>Designs
-                            <span class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-red-600"></span>
-                        </li>
+                        <Link to={'/design-ideas'}>
+                            <li className='text-xs font-normal transition-all cursor-pointer md:text-lg group hover:text-red-600 hover:scale-110 duration-400'>Design Ideas
+                                <span class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-red-600"></span>
+                            </li>
+                        </Link>
                     </ul>
                 </div>
             </div>
