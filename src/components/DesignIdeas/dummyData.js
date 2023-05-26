@@ -45,3 +45,22 @@ export const DesignIdeas = [
         noOfDesigns: 509
     }
 ]
+
+export const features = [
+    {
+        img: 'https://images.livspace-cdn.com/w:36/h:36/dpr:1/plain/https://d3gq2merok8n5r.cloudfront.net/bumblebee/trust-markers-1674031368-qjo4N/customisable-designs-1674031502-zdjs6.png',
+        featureName: 'Easy EMIs'
+    },
+    {
+        img: 'https://images.livspace-cdn.com/w:36/h:36/dpr:1/plain/https://d3gq2merok8n5r.cloudfront.net/bumblebee/trust-markers-1674031368-qjo4N/customisable-designs-1674031502-zdjs6.png',
+        featureName: 'Fast Delivery'
+    },
+    {
+        img: 'https://images.livspace-cdn.com/w:36/h:36/dpr:1/plain/https://d3gq2merok8n5r.cloudfront.net/bumblebee/trust-markers-1674031368-qjo4N/customisable-designs-1674031502-zdjs6.png',
+        featureName: '1 year Warranty'
+    },
+    {
+        img: 'https://images.livspace-cdn.com/w:36/h:36/dpr:1/plain/https://d3gq2merok8n5r.cloudfront.net/bumblebee/trust-markers-1674031368-qjo4N/customisable-designs-1674031502-zdjs6.png',
+        featureName: 'Design variations'
+    }
+]

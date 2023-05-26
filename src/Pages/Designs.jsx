@@ -1,7 +1,7 @@
 import React from 'react'
 import { motion } from 'framer-motion';
-import DesignCard from './DesignCard';
-import { DesignIdeas } from './dummyData';
+import DesignCard from '../components/DesignIdeas/MainDesignPage/DesignCard';
+import { DesignIdeas } from '../components/DesignIdeas/dummyData';
 const Designs = () => {
     return (
         <div className='flex flex-col items-center justify-center w-full gap-12 mx-auto my-12'>
