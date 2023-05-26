@@ -3,9 +3,10 @@ import Navbar from './components/Navbar/Navbar';
 import { useState, useEffect } from 'react';
 import Footer from './components/Footer/footer';
 import Home from './Pages/Home';
-import Designs from './components/DesignIdeas/Designs';
+import Designs from './Pages/Designs';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
-import DesignCard from './components/DesignIdeas/DesignCard';
+import DesignCard from './components/DesignIdeas/MainDesignPage/DesignCard';
+import SpecificDesign from './Pages/SpecificDesign';
 function App() {
   // Watching for windowWidth to make responsive
   let width;
@@ -30,7 +31,7 @@ function App() {
   )
   return (
     <Router basename='/'>
-      <div className='w-full min-h-screen overflow-x-hidden'>
+      <div className='relative w-full min-h-screen overflow-x-hidden'>
         <>
           <Navbar windowWidth={windowWidth} />
           <Routes>
@@ -41,6 +42,7 @@ function App() {
             title={designname.title}
             noOfDesigns={designname.noOfDesigns}
             />} />
+            <Route path='/design-ideas/:designname/:specificdesign' element={<SpecificDesign />} />
           </Routes>
           <Footer />
         </>
