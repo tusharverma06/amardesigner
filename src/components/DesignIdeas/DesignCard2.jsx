@@ -8,7 +8,7 @@ const DesignCard = ({ thumbnail, title, feet, designTitle, DesignData, index }) 
     const handleToggle = () => setIsLiked(!isLiked)
     return (
         <Link
-            to={`/design-ideas/${designTitle}/${title}`} className='flex flex-col items-center justify-between w-11/12 max-w-md gap-3 pb-4  mx-auto  rounded-lg shadow-xl sm:w-[45%] lg:w-[30%] drop-shadow-sm'
+            to={`/design-ideas/${designTitle}/${title}`} className='flex flex-col items-center justify-between w-11/12 max-w-md gap-3 pb-4  mx-auto  rounded-lg shadow-md sm:w-[45%] lg:w-[30%] drop-shadow-sm'
             state={{
                 thumbnail, DesignData, index
             }}
@@ -25,8 +25,8 @@ const DesignCard = ({ thumbnail, title, feet, designTitle, DesignData, index }) 
             <span className="flex items-center justify-start w-full px-3 text-xl font-medium text-gray-800">{title}</span>
             <span className="flex items-center justify-start w-full px-3 text-sm font-medium text-gray-500">Size:&nbsp;{feet} &nbsp; feet</span>
             <div className="flex flex-row justify-between gap-5 ">
-                <button className='bg-white rounded-3xl border-[#EB595F] px-5 sm:px-5  py-3 border-[1px] text-[#EB595F] font-semibold text-[8px] sm:text-sm tracking-wider whitespace-nowrap '>Book Free Consultations</button>
-                <button className='bg-[#EB595F] text-white px-4 sm:px-10  sm:py-2 font-medium lg:text-sm whitespace-nowrap sm:text-sm text-xs rounded-3xl '>Get Quote</button>
+                <button className='bg-white rounded-3xl border-[#EB595F] px-5 sm:px-2 xl:px-5  py-3 border-[1px] text-[#EB595F] font-semibold text-[8px] sm:text-sm  tracking-wider  whitespace-nowrap '>Book Free Consultations</button>
+                <button className='bg-[#EB595F] text-white px-4 sm:px-6 xl:px-10  sm:py-2 font-medium lg:text-sm whitespace-nowrap sm:text-sm text-xs rounded-3xl '>Get Quote</button>
             </div>
         </Link>
     )

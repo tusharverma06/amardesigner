@@ -54,7 +54,7 @@ export const Modal = ({
                             <div className="flex flex-col items-center justify-center w-full gap-12">
                                 <input type="text" className="w-11/12 px-4 py-4 border border-gray-400 rounded-lg" placeholder="Name" onChange={inputHandler} value={data.name} name="name"/>
                                 <input type="number" className="w-11/12 px-4 py-4 border border-gray-400 rounded-lg" placeholder="Pincode" onChange={inputHandler} value={data.pincode} name="pincode"/>
-                                <input type="email" className="w-11/12 px-4 py-4 border border-gray-400 rounded-lg" placeholder="Email" onChange={inputHandler} name="email "/>
+                                <input type="email" className="w-11/12 px-4 py-4 border border-gray-400 rounded-lg" placeholder="Email" onChange={inputHandler} name="email" value={data.email}/>
                                 <div className='flex items-center justify-center w-full my-12'>
                                     <button className='px-20 py-5 mx-auto font-bold text-center text-white bg-red-500 rounded-xl' onClick={handleClick}>Get Free Quote</button>
                                 </div>

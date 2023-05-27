@@ -13,7 +13,7 @@ const SpecificDesign = () => {
     const navigate = useNavigate()
     const location = useLocation()
     const {thumbnail, DesignData, index} = location.state
-    console.log(location.state)
+    // console.log(location.state)
     const { designCategory, designName } = useParams()
     const [isCopied, setIsCopied] = useState(false)
     const [isLiked, setIsLiked] = useState(false)
