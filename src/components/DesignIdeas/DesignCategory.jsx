@@ -11,7 +11,7 @@ const DesignCategory = () => {
 
             <div className='flex flex-col items-center justify-center w-full gap-12 mx-auto '>
                 {/* Heading section */}
-                <section className='flex flex-col items-center justify-start w-5/6 gap-4 lg:my-12'>
+                <section className='flex flex-col items-center justify-start w-5/6 gap-4 my-12'>
                     <div className="relative flex items-center justify-between w-full gap-2">
                         {/* <img src="" alt="" /> */}
                         <motion.span
