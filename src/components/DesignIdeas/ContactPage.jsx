@@ -11,7 +11,7 @@ const ContactPage = () => {
           <div className="grow-0 shrink-0 basis-auto mb-12 md:mb-0 w-full md:w-7/12 px-3 lg:px-6">
             <img src={contactPageBg} alt="" />
           </div>
-          <div className="grow-0 shrink-0 basis-auto w-full flex flex-col justify-center bg- md:w-5/12 px-3 lg:px-6">
+          <div className="grow-0 shrink-0 basis-auto w-full sm:py-5 flex flex-col justify-center bg- md:w-5/12 px-3 lg:px-6">
             <p className="font-bold mb-6 text-center text-3xl ">Designs for Every Budget</p>
             <p className="font-bold mb-6 text-center ">Get your dream home today. Let our experts help you</p>
             <form>
