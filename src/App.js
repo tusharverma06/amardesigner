@@ -4,9 +4,11 @@ import { useState, useEffect } from 'react';
 import Footer from './components/Footer/footer';
 import Home from './Pages/Home';
 import Designs from './Pages/Designs';
-import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import DesignCard from './components/DesignIdeas/MainDesignPage/DesignCard';
 import SpecificDesign from './Pages/SpecificDesign';
+
+import DesignCategory from './components/DesignIdeas/DesignCategory';
 function App() {
   // Watching for windowWidth to make responsive
   let width;
@@ -37,12 +39,18 @@ function App() {
           <Routes>
             <Route path='/' element={<Home />} />
             <Route path='/design-ideas' element={<Designs />} />
-            <Route path='/design-ideas/:designname' element={<DesignCard 
+            <Route path='/design-ideas/:designname/maindesign' element={<DesignCard 
             thumbnail={designname.thumbnail}
             title={designname.title}
             noOfDesigns={designname.noOfDesigns}
             />} />
             <Route path='/design-ideas/:designname/:specificdesign' element={<SpecificDesign />} />
+            <Route path='/design-ideas/:designname' element={<DesignCategory
+            thumbnail={designname.thumbnail}
+            title={designname.title}
+            feet={designname.feet}
+            
+            />} />
           </Routes>
           <Footer />
         </>
