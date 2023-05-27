@@ -96,34 +96,6 @@ export const DesignIdeas1 = [
         title: 'Modern L-Shaped Kitchen Cabinet Design With A Granite Countertop ',
         feet: "12x7"
     },
-    {
-        thumbnail: 'https://images.livspace-cdn.com/w:1920/plain/https://d3gq2merok8n5r.cloudfront.net/abhinav/design-ideas-thumbnails-1628773921-7vSz1/destop-1673502929-FsYkr.jpg',
-        title: 'Contemporary L-Shaped Kitchen Design With Spacious Cabinets And A Wicker Basket',
-        feet: "12x10"
-    },
-    {
-        thumbnail: 'https://images.livspace-cdn.com/w:1920/plain/https://d3gq2merok8n5r.cloudfront.net/abhinav/design-ideas-thumbnails-1628773921-7vSz1/jas-thumbnails-1662014793-zEzY3/desktop-1662014816-DsTte/kbr-d-1662025138-0EGbI.png',
-        title: 'Modern L-Shaped Kitchen Design With Grey Storage Cabinets ',
-        feet: "9x6"
-    },
-    {
-        thumbnail: 'https://images.livspace-cdn.com/w:1920/plain/https://d3gq2merok8n5r.cloudfront.net/abhinav/design-ideas-thumbnails-1628773921-7vSz1/jas-thumbnails-1662014793-zEzY3/desktop-1662014816-DsTte/kbr-d-1662025138-0EGbI.png',
-        title: 'Modern U-Shaped Kitchen Design With Tall Storage Units ',
-        feet: "10x12"
-    },
-    {
-        thumbnail: 'https://images.livspace-cdn.com/w:1920/plain/https://d3gq2merok8n5r.cloudfront.net/abhinav/design-ideas-thumbnails-1628773921-7vSz1/jas-thumbnails-1662014793-zEzY3/desktop-1662014816-DsTte/kbr-d-1662025138-0EGbI.png',
-        title: 'Modern U-Shaped Kitchen Design With Tall Storage Units ',
-        feet: "10x12"
-    },
-    {
-        thumbnail: 'https://images.livspace-cdn.com/w:1920/plain/https://d3gq2merok8n5r.cloudfront.net/abhinav/design-ideas-thumbnails-1628773921-7vSz1/jas-thumbnails-1662014793-zEzY3/desktop-1662014816-DsTte/kbr-d-1662025138-0EGbI.png',
-        title: 'Modern U-Shaped Kitchen Design With Tall Storage Units ',
-        feet: "10x12"
-    },
-    {
-        thumbnail: 'https://images.livspace-cdn.com/w:1920/plain/https://d3gq2merok8n5r.cloudfront.net/abhinav/design-ideas-thumbnails-1628773921-7vSz1/jas-thumbnails-1662014793-zEzY3/desktop-1662014816-DsTte/kbr-d-1662025138-0EGbI.png',
-        title: 'Modern U-Shaped Kitchen Design With Tall Storage Units ',
-        feet: "10x12"
-    }
+
+
 ]

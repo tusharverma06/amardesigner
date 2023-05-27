@@ -7,6 +7,7 @@ const DesignCategory = () => {
   return (
     <div>
 <div className='flex flex-col items-center justify-center w-full gap-12 mx-auto my-12'>
+
             {/* Heading section */}
             <section className='flex flex-col items-center justify-start w-5/6 gap-4 lg:my-12'>
                 <div className="relative flex items-center justify-start w-full gap-2">

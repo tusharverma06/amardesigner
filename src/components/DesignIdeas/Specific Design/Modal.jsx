@@ -47,14 +47,14 @@ export const Modal = ({
                         }}
                     >
                         <div className='inset-0 z-10 w-11/12 h-[600px] sm:w-[416px] sm:h-[605px] flex flex-col items-center justify-start gap-24 bg-white py-4 mx-auto my-28 rounded-lg'>
-                            <div className="flex items-center justify-start w-full gap-16 py-3 border-b border-gray-200 shadow-md">
-                                <img onClick={handleCancel} src="https://icons.veryicon.com/png/o/miscellaneous/medium-thin-linear-icon/cross-23.png" alt="" className="w-10 h-10 cursor-pointer " />
+                            <div className="flex items-center justify-center w-full gap-16 py-3 border-b border-gray-200 shadow-md">
                                 <h1 className="text-start font-semibold text-[22px]  text-black ">Designs for Every Wallet!</h1>
+                                <img onClick={handleCancel} src="https://icons.veryicon.com/png/o/miscellaneous/medium-thin-linear-icon/cross-23.png" alt="" className="w-10 h-10 cursor-pointer " />
                             </div>
                             <div className="flex flex-col items-center justify-center w-full gap-12">
                                 <input type="text" className="w-11/12 px-4 py-4 border border-gray-400 rounded-lg" placeholder="Name" onChange={inputHandler} value={data.name} name="name"/>
                                 <input type="number" className="w-11/12 px-4 py-4 border border-gray-400 rounded-lg" placeholder="Pincode" onChange={inputHandler} value={data.pincode} name="pincode"/>
-                                <input type="email" className="w-11/12 px-4 py-4 border border-gray-400 rounded-lg" placeholder="Email" onChange={inputHandler} value={data.email} name="email "/>
+                                <input type="email" className="w-11/12 px-4 py-4 border border-gray-400 rounded-lg" placeholder="Email" onChange={inputHandler} name="email "/>
                                 <div className='flex items-center justify-center w-full my-12'>
                                     <button className='px-20 py-5 mx-auto font-bold text-center text-white bg-red-500 rounded-xl' onClick={handleClick}>Get Free Quote</button>
                                 </div>
