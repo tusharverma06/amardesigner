@@ -36,7 +36,16 @@ function App() {
       <div className='relative w-full min-h-screen overflow-x-hidden'>
         <>
           <Navbar windowWidth={windowWidth} />
+          <a
+        href="https://wa.me/+917428430119"
+        class="whatsapp_float fixed w-[60px] bottom-1/2 -right-1 rounded-lg z-50 bg-white shadow-xl p-5"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+<img src="https://img.icons8.com/color/30/whatsapp--v1.png" className='z-50' alt="" />
+      </a>
           <Routes>
+            
             <Route path='/' element={<Home />} />
             <Route path='/design-ideas' element={<Designs />} />
             <Route path='/design-ideas/:designname/maindesign' element={<DesignCard 
