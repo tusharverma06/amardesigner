@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 import Footer from './components/Footer/footer';
 import Home from './Pages/Home';
 import Designs from './Pages/Designs';
-import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Navigate} from 'react-router-dom';
 import DesignCard from './components/DesignIdeas/MainDesignPage/DesignCard';
 import SpecificDesign from './Pages/SpecificDesign';
 
@@ -24,13 +24,7 @@ function App() {
 
     window.addEventListener("resize", watchWidth);
   }, [windowWidth]);
-  const [designname, setDesignName] = useState(
-    {
-      thumbnail: 'https://images.livspace-cdn.com/w:1920/plain/https://d3gq2merok8n5r.cloudfront.net/abhinav/design-ideas-thumbnails-1628773921-7vSz1/jas-thumbnails-1662014793-zEzY3/desktop-1662014816-DsTte/kbr-d-1662025138-0EGbI.png',
-      title: 'Kids Room Design',
-      noOfDesigns: 509
-    }
-  )
+
   return (
     <Router basename='/'>
       <div className='relative w-full min-h-screen overflow-x-hidden'>
@@ -48,18 +42,9 @@ function App() {
             
             <Route path='/' element={<Home />} />
             <Route path='/design-ideas' element={<Designs />} />
-            <Route path='/design-ideas/:designname/maindesign' element={<DesignCard 
-            thumbnail={designname.thumbnail}
-            title={designname.title}
-            noOfDesigns={designname.noOfDesigns}
-            />} />
-            <Route path='/design-ideas/:designname/:specificdesign' element={<SpecificDesign />} />
-            <Route path='/design-ideas/:designname' element={<DesignCategory
-            thumbnail={designname.thumbnail}
-            title={designname.title}
-            feet={designname.feet}
-            
-            />} />
+            <Route path='/design-ideas/:designCategory/:designName' element={<SpecificDesign />} />
+            <Route path='/design-ideas/:designCategory' element={<DesignCategory />} />
+            <Route path="*" element={<Navigate to="/" />} />
           </Routes>
           <Footer />
         </>

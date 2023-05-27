@@ -11,4 +11,4 @@ const DesignCard = ({ thumbnail, title, noOfDesigns }) => {
     )
 }
 
-export default DesignCard
+export default DesignCard;
