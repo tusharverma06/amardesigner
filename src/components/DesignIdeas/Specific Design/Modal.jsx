@@ -46,9 +46,9 @@ export const Modal = ({
                             },
                         }}
                     >
-                        <div className='inset-0 z-10 w-11/12 h-[600px] sm:w-[416px] sm:h-[605px] flex flex-col items-center justify-start gap-10 bg-white py-4 mx-auto my-28 rounded-lg'>
+                        <div className='inset-0 z-10 w-11/12 h-[500px] sm:w-[416px] sm:h-[555px] flex flex-col items-center justify-start gap-10 bg-white py-4 mx-auto my-28 rounded-lg'>
                             <div className="relative flex items-center justify-center w-full gap-16 px-2 py-2 border-b border-gray-200 shadow-sm">
-                                <h1 className="text-lg font-bold text-center text-black sm:text-2xl ">Designs for Every Wallet
+                                <h1 className="text-lg font-bold text-center text-black sm:text-2xl ">Desgin Your Dream Home
                                     <motion.span
                                         initial={{ width: "0%" }}
                                         animate={{ width: "100%" }}
@@ -59,8 +59,8 @@ export const Modal = ({
                             </div>
                             <div className="flex flex-col items-center justify-center w-full gap-10">
                                 <input type="text" className="w-11/12 px-4 py-4 border border-gray-400 rounded-xl" placeholder="Name" onChange={inputHandler} value={data.name} name="name" />
-                                <input type="number" className="w-11/12 px-4 py-4 border border-gray-400 rounded-xl" placeholder="Pincode" onChange={inputHandler} value={data.pincode} name="pincode" />
                                 <input type="tel" className="w-11/12 px-4 py-4 border border-gray-400 rounded-xl" placeholder="Phone Number" onChange={inputHandler} name="email" value={data.email} />
+                                <input type="number" className="w-11/12 px-4 py-4 border border-gray-400 rounded-xl" placeholder="Pincode" onChange={inputHandler} value={data.pincode} name="pincode" />
                                 <div className='flex items-center justify-center w-full'>
                                     <button className='w-11/12 py-5 mx-auto mt-4 font-bold text-center text-white bg-red-500 sm:px-20 rounded-xl' onClick={handleClick}>Get Free Quote</button>
                                 </div>
