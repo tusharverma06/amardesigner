@@ -1,6 +1,6 @@
 import React from 'react'
 import { motion } from 'framer-motion';
-import DesignCard from '../components/DesignIdeas/MainDesignPage/DesignCard';
+import DesignCard from '../components/DesignIdeas/MainDesignPage/DesignCard.tsx';
 import { DesignIdeas } from '../components/DesignIdeas/dummyData';
 import { Link } from 'react-router-dom';
 const Designs = () => {
@@ -13,7 +13,7 @@ const Designs = () => {
                     <motion.span
                         initial={{ height: "0%" }}
                         animate={{ height: "100%" }}
-                        class="absolute  transition-all duration-1000 w-2 bg-red-600 top-0 left-[-0.8rem]">
+                        className="absolute  transition-all duration-1000 w-2 bg-red-600 top-0 left-[-0.8rem]">
                     </motion.span>
                     <h1 className='text-2xl font-bold text-start sm:text-4xl md:text-5xl lg:text-6xl'>Home Interior Designs
                     </h1>

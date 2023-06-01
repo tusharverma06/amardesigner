@@ -1,16 +1,16 @@
 import React, { useState } from 'react'
 import LikeIcon from '../assets/liked.svg'
 import LinkCopied from '../assets/LinkCopied.png'
-import Feature from '../components/DesignIdeas/Specific Design/Feature'
-import { features } from '../components/DesignIdeas/dummyData'
+// import Feature from '../components/DesignIdeas/Specific Design/Feature'
+// import { features } from '../components/DesignIdeas/dummyData'
 import { motion } from 'framer-motion';
-import Modal from '../components/DesignIdeas/Specific Design/Modal'
-import { useLocation, useNavigate, useParams } from 'react-router-dom'
+import Modal from '../components/DesignIdeas/Specific Design/Modal.tsx'
+import { useLocation, useParams } from 'react-router-dom'
 import BackArrow from '../assets/back-arrow.svg'
 import { Link } from 'react-router-dom'
 import { nameShortner } from '../utils/utils'
 const SpecificDesign = () => {
-    const navigate = useNavigate()
+    // const navigate = useNavigate()
     const location = useLocation()
     const { thumbnail, DesignData, index, feet } = location.state
     console.log(location.state)
@@ -142,7 +142,7 @@ const SpecificDesign = () => {
                         <motion.span
                             initial={{ width: "0%" }}
                             animate={{ width: "100%" }}
-                            class="transition-all duration-1000  bg-red-600 h-0.5">
+                            className="transition-all duration-1000  bg-red-600 h-0.5">
                         </motion.span>
                     </h1>
                     <ul className='space-y-4 '>

@@ -1,0 +1,9 @@
+{
+    "compilerOptions": {
+      "jsx": "react",
+      "allowJs": true,
+      "checkJs": true,
+      "allowImportingTsExtensions": true,
+      "esModuleInterop": true
+    }
+  }

@@ -1,25 +1,24 @@
-import React, { useState,useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import "tailwindcss/tailwind.css";
 
+interface CarouselItem {
+  title: string;
+  description: string;
+}
 
+interface CarouselProps {
+  items: CarouselItem[];
+}
 
+const Carousel: React.FC<CarouselProps> = ({ items }) => {
+  const [activeIndex, setActiveIndex] = useState(0);
 
-
-const Carousel = ({ items }) => {
-
-
-
-
-
-    const [activeIndex, setActiveIndex] = useState(0);
-
-
-    useEffect(() => {
-        const interval = setInterval(() => {
-          setActiveIndex((activeIndex + 1) % items.length);
-        }, 2000);
-        return () => clearInterval(interval);
-      }, [activeIndex, items]);
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setActiveIndex((activeIndex + 1) % items.length);
+    }, 2000);
+    return () => clearInterval(interval);
+  }, [activeIndex, items]);
 
   const nextItem = () => {
     setActiveIndex((activeIndex + 1) % items.length);

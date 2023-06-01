@@ -1,14 +1,14 @@
 import './App.css';
-import Navbar from './components/Navbar/Navbar';
+import Navbar from './components/Navbar/Navbar.tsx';
 import { useState, useEffect } from 'react';
-import Footer from './components/Footer/footer';
-import Home from './Pages/Home';
-import Designs from './Pages/Designs';
+import Footer from './components/Footer/footer.tsx';
+import Home from './Pages/Home.tsx';
+import Designs from './Pages/Designs.tsx';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
-import DesignCard from './components/DesignIdeas/MainDesignPage/DesignCard';
-import SpecificDesign from './Pages/SpecificDesign';
-
-import DesignCategory from './components/DesignIdeas/DesignCategory';
+// import DesignCard from './components/DesignIdeas/MainDesignPage/DesignCard';
+import SpecificDesign from './Pages/SpecificDesign.tsx';
+import DesignCategory from './components/DesignIdeas/DesignCategory.tsx';
+import React from 'react';
 function App() {
   // Watching for windowWidth to make responsive
   let width;
@@ -32,7 +32,7 @@ function App() {
           <Navbar windowWidth={windowWidth} />
           <a
             href="https://wa.me/+917428430119"
-            class="whatsapp_float fixed  bottom-1/2 right-1 rounded-lg z-50 bg-white shadow-xl "
+            className="whatsapp_float fixed  bottom-1/2 right-1 rounded-lg z-50 bg-white shadow-xl "
             target="_blank"
             rel="noopener noreferrer"
           >
